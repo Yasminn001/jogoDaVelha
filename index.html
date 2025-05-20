@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+ 
+</head>
+<body onload="recomeca()">
+    <div class="netflix-header">
+      
+        <img src="img/liyas.png" alt="Logo" class="corner-logo">
+
+            <div class="header-title">
+                <h1>JOGO DA VELHA</h1>
+            </div>
+    </div>
+    
+    <div class="game-container">
+        <div id="jogo">
+            <div class="linha">
+                <div class="casa" id="casa0" onclick="verifica(0)">
+                    <img src="" id="img0" />
+                </div>
+                <div class="casa" id="casa1" onclick="verifica(1)">
+                    <img src="" id="img1"/>
+                </div>
+                <div class="casa" id="casa2" onclick="verifica(2)">
+                    <img src="" id="img2"/>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="casa" id="casa3" onclick="verifica(3)">
+                    <img src="" id="img3"/>
+                </div>
+                <div class="casa" id="casa4" onclick="verifica(4)">
+                    <img src="" id="img4"/>
+                </div>
+                <div class="casa" id="casa5" onclick="verifica(5)">
+                    <img src="" id="img5"/>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="casa" id="casa6" onclick="verifica(6)">
+                    <img src="" id="img6"/>
+                </div>
+                <div class="casa" id="casa7" onclick="verifica(7)">
+                    <img src="" id="img7"/>
+                </div>
+                <div class="casa" id="casa8" onclick="verifica(8)">
+                    <img src="" id="img8"/>
+                </div>
+            </div>
+        </div>
+        
+        <div id="resultado">
+            <p id="resposta">RESULTADO </p>
+          
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="score-label xis-score">PONTOS X</span>
+                    <span class="score-value xis-score" id="xis">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label bola-score">PONTOS O</span>
+                    <span class="score-value bola-score" id="bola">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label velha-score">VELHAS</span>
+                    <span class="score-value velha-score" id="velha">0</span>
+                </div>
+            </div>
+            
+            <input type="button" id="btnNovo" value="NOVO JOGO" onclick="recomeca()"/>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
